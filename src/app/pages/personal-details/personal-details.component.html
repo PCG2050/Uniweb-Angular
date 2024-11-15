@@ -1,0 +1,20 @@
+<div>
+    <h1>Personal Details</h1>
+    <div class="container">
+    <!-- Tab Navigation -->
+    <ul class="tabs list-unstyled">
+      <li>
+        <a [routerLink]="'tab1'" routerLinkActive="active">Tab 1</a>
+      </li>
+      <li>
+        <a [routerLink]="'tab2'" routerLinkActive="active">Tab 2</a>
+      </li>
+    </ul>
+    </div>
+    
+    <!-- Child Route Content -->
+     <div class="tab-content" >
+        <router-outlet></router-outlet>
+     </div>
+   
+  </div>

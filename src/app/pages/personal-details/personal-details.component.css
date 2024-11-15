@@ -1,0 +1,51 @@
+/* Center the tabs in the page */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+  /* Style the tabs */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style individual tab links */
+  .tabs a {
+    flex: 1;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #555;
+    background: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  /* Highlight on hover */
+  .tabs a:hover {
+    background-color: #007aff;
+    color: white;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Highlight the active tab fully */
+  .tabs a.active {
+    background-color: #007aff;
+    color: white;
+    font-weight: bold;
+    box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+    flex: 1;
+  }
+  
